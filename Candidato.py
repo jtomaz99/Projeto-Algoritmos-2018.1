@@ -49,6 +49,49 @@ class Candidato():
     
     def getCpf(self):
         return self.__cpf
+    
+    def getNomeUrna(self):
+        return self.__nome_urna
+    
+    def getNumeroPartido(self):
+        return self.__numero_partido
+    
+    def getSiglaPartido(self):
+        return self.__sigla_partido
+    
+    def getCodigoOcupação(self):
+        return self.__codigo_ocupação
+
+    def getDescriçãoOcupação(self):
+        return self.__descrição_ocupação
+    
+    def getDataNascimento(self):
+        return self.__data_nascimento
+    
+    def getSexo(self):
+        return self.__sexo
+    
+    def getGrauInstrução(self):
+        return self.__grau_instrução
+    
+    def getEstadoCivil(self):
+        return self.__estado_civil
+    
+    def getUfNascimento(self):
+        return self.__uf_nascimento
+    
+    def getMunicipioNascimento(self):
+        return self.__municipio_nascimento
+    
+    def getSituaçãoCandidato(self):
+        return self.__situação_candidato
+    
+    def getSituaçãoCandidatura(self):
+        return self.__situação_candidatura
+    
+    def getListaBens(self):
+        return self.__lista_bens
+
 
     #metodos para mudança de dados a baixo:
     def setAnoEleição(self,novo_ano):
@@ -140,3 +183,4 @@ class Candidato():
         return self.__lista_bens
 
 
+    
