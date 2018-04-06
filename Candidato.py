@@ -1,5 +1,5 @@
 class Candidato():
-    def __init__(ano_eleição, estado, codigo_cargo, descrição_cargo, nome_candidato, id_candidato, num_urna, cpf, nome_urna, numero_partido, nome_partido, sigla_partido, codigo_ocupação, descrição_ocupação, data_nascimento, sexo, grau_instrução, estado_civil, uf_nascimento, municipio_nascimento, situação_candidato, situação_candidatura, lista_bens):
+    def __init__(self,ano_eleição, estado, codigo_cargo, descrição_cargo, nome_candidato, id_candidato, num_urna, cpf, nome_urna, situação_candidatura, numero_partido, sigla_partido, nome_partido, codigo_ocupação, descrição_ocupação, data_nascimento, sexo, grau_instrução, estado_civil, uf_nascimento, municipio_nascimento, situação_candidato, lista_bens):
         self.__ano_eleição = ano_eleição
         self.__estado = estado
         self.__codigo_cargo = codigo_cargo
@@ -44,7 +44,7 @@ class Candidato():
     def getIdCandidato(self):
         return self.__id_candidato
     
-    def getNumUrna(self)
+    def getNumUrna(self):
         return self.__num_urna
     
     def getCpf(self):
@@ -120,7 +120,7 @@ class Candidato():
 
     def setNumUrna(self,novo_num_urna):
         self.__num_urna = novo_num_urna
-        return self.__num_urna~
+        return self.__num_urna
     
     def setCpf(self,novo_cpf):
         self.__cpf = novo_cpf
@@ -182,5 +182,21 @@ class Candidato():
         self.__lista_bens = nova_lista_bens
         return self.__lista_bens
 
+    #implementar depois da classe bem.
+    def __str__(self):
+        nome_urna = self.getNomeUrna()
+        num_urna = self.getNumUrna()
+        sigla = self.getSiglaPartido()
+        return nome_urna + ' -- ' + num_urna + ' -- ' + sigla + '\n' + 
 
-    
+
+
+
+    #quando for feita a lista duplamente encadeada mudar isso.
+    def incluirBem(self,bem):
+        lista_bens = self.getListaBens()
+        lista_bens.append(bem)
+        return setListaBens(lista_bens)
+        
+
+\n
