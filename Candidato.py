@@ -1,7 +1,7 @@
 class Candidato():
     def __init__(self,ano_eleição, estado, codigo_cargo, descrição_cargo, nome_candidato, id_candidato, num_urna, cpf, nome_urna, situação_candidatura, numero_partido, sigla_partido, nome_partido, codigo_ocupação, descrição_ocupação, data_nascimento, sexo, grau_instrução, estado_civil, uf_nascimento, municipio_nascimento, situação_candidato, lista_bens):
         self.__ano_eleição = ano_eleição
-        self.__estado = estado
+        self.__estado = estado  #Sigla da UF
         self.__codigo_cargo = codigo_cargo
         self.__descrição_cargo = descrição_cargo
         self.__nome_candidato = nome_candidato
@@ -187,8 +187,11 @@ class Candidato():
         nome_urna = self.getNomeUrna()
         num_urna = self.getNumUrna()
         sigla = self.getSiglaPartido()
-        return nome_urna + ' -- ' + num_urna + ' -- ' + sigla + '\n' + 
-
+        cargo = self.getDescriçãoCargo()
+        UF = self.getEstado()
+        municipio = self.getMunicipioNascimento()
+        UfNas = self.getUfNascimento()
+        return nome_urna + ' -- ' + num_urna + ' -- ' + sigla + '\n' + cargo + '(' + UF +')' + '\n' + municipio + '(' + UfNas + ')' + '\n' 
 
 
 
@@ -199,4 +202,3 @@ class Candidato():
         return setListaBens(lista_bens)
         
 
-\n

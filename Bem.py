@@ -17,4 +17,10 @@ class Bem():
     def getValorBem(self):
         return self.__valor_bem
     
+    def __str__(self):
+        codigo = getCodigoTipoBem()
+        descrição_tipo = getDescriçãoTipoBem()
+        valor = getValorBem()
+        descrição_detalhada = getDescriçãoDetalhadaBem()
+        return codigo + ' -- ' + descrição_tipo + ' -- ' + valor + '\n' + descrição_detalhada
     
