@@ -1,3 +1,16 @@
+# -*- coding: utf-8 -*-
+'''
+Universidade Federal de Pernambuco (UFPE) (http://www.ufpe.br)
+Centro de Informática (CIn) (http://www.cin.ufpe.br)
+Graduando em Sistemas de Informação
+IF969 - Algoritmos e estrutura de dados
+Autor:  José Tomáz Gonçalves de Lima (jtgl)
+Email:  jtgl@cin.ufpe.br
+Data:   2018-04-05
+Copyright(c) 2018 José Tomáz
+'''
+from Bem import Bem
+
 class Candidato():
     def __init__(self,ano_eleição, estado, codigo_cargo, descrição_cargo, nome_candidato, id_candidato, num_urna, cpf, nome_urna, situação_candidatura, numero_partido, sigla_partido, nome_partido, codigo_ocupação, descrição_ocupação, data_nascimento, sexo, grau_instrução, estado_civil, uf_nascimento, municipio_nascimento, situação_candidato, lista_bens):
         self.__ano_eleição = ano_eleição
